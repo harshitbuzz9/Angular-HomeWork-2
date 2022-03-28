@@ -1,0 +1,35 @@
+<div id="n2">  
+    <form [formGroup]="empData" (ngSubmit)="EmployData()">
+        <div> 
+            <input type="text" placeholder="Enter E-Name" name="EmpN" formControlName="EmpN">
+            <br/>
+            <span style="color: red;" *ngIf="EmpN && EmpN.invalid && EmpN.touched">Enter into Field</span>
+        </div>
+        <br/>
+        <div> 
+     
+            <input type="text" placeholder="Enter salary" formControlName="Salary">
+            <br>
+            <span style="color: red;" *ngIf="Salary && Salary.invalid && Salary.touched">Enter valid Field</span>
+     
+        </div>
+        <br/>
+        <div> 
+            <input type="text" name="Dep" placeholder="Enter department" formControlName="Dep">
+            <br/>
+            <span style="color: red;" *ngIf="Dep && Dep.invalid && Dep.touched">Enter valid Field</span>
+     
+        </div>
+        <br/>
+        <div> 
+            <input type="text" name="City" placeholder="cit" formControlName="cit">
+            <br/>
+            <span style="color: red;" *ngIf="cit && cit.invalid && cit.touched">Enter valid Field</span>
+            <br/>
+            <span></span>
+        </div>
+        <br/>
+        <br/>
+        <button id="j2" [disabled]="empData.invalid">Verify</button >
+    </form>
+    </div>

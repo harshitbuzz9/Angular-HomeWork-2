@@ -1,0 +1,40 @@
+
+<div id="n1">  
+    <form [formGroup]="elementsAre" (ngSubmit)="vallues()" (ngSubmit)=" ProductPrice()">
+        <div> 
+            <input type="text" placeholder="Enter Product Name" name="productname" formControlName="ProductName">
+            <br/>
+            <span style="color: red;" *ngIf="ProductName && ProductName.invalid && ProductName.touched">Enter into Field</span>
+        </div>
+        <br/>
+        <div> 
+     
+            <input type="text" placeholder="Enter Brand" formControlName="Brand">
+            <br>
+            <span style="color: red;" *ngIf="Brand && Brand.invalid && Brand.touched">Enter valid Field</span>
+     
+        </div>
+        <br/>
+        <div> 
+            <input type="text" name="city" placeholder="Enter city" formControlName="city">
+            <br/>
+            <span style="color: red;" *ngIf="city && city.invalid && city.touched">Enter valid Field</span>
+     
+        </div>
+        <br/>
+        <div> 
+            <input type="text" name="modelNumber" placeholder="modelNo" formControlName="modelNo">
+            <br/>
+            <span style="color: red;" *ngIf="modelNo && modelNo.invalid && modelNo.touched">Enter valid Field</span>
+            <br/>
+            <span></span>
+        </div>
+        <br/>
+        <div> 
+            <input type="text" name="Price" placeholder="Enter Price" formControlName="price">
+            <span style="color: red;" *ngIf="price && price.invalid && price.touched">Enter valid Field</span>
+        </div>
+        <br/>
+        <button id="j1" [disabled]="elementsAre.invalid">Verify</button>
+    </form>
+    </div>

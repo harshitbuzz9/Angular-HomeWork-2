@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "ProductName": "as",
+      "Brand": "de",
+      "city": "dd",
+      "modelNo": "12",
+      "price": "12",
+      "id": 2
+    },
+    {
+      "ProductName": "har",
+      "Brand": "gvd",
+      "city": "dd",
+      "modelNo": "12",
+      "price": "12",
+      "id": 3
+    },
+    {
+      "ProductName": "jammu",
+      "Brand": "apple",
+      "city": "delhi",
+      "modelNo": "785556622",
+      "price": "2345",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

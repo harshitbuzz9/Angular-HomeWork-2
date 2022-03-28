@@ -1,0 +1,52 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "Name": "Ipad",
+        "Brand": "Apple",
+        "ModelName":"MK1211",
+        "Price":"92000"
+       
+        
+      },
+      {
+        "id": "2",
+        "Name": "Smart Watch",
+        "Brand": "Apple",
+        "ModelName":"SM411",
+        "Price":"23000"
+      },
+      {
+        "id": "3",
+        "Name": "Headphone",
+        "Brand": "Apple",
+        "ModelName":"HM11011",
+        "Price":"13000"
+     
+      },
+      {
+        "id": "4",
+        "Name": "Earphone",
+        "Brand": "Boat",
+        "ModelName":"BT1311",
+        "Price":"2000"
+        
+      },
+      {
+        "id": "5",
+        "Name": "Laptop",
+        "Brand": "Apple",
+        "ModelName":"AK32001",
+        "Price":"72000" 
+         
+      },
+      {
+        "id": "6",
+        "Name": "Mobile",
+        "Brand": "Samsung",
+        "ModelName":"MK12A1",
+        "Price":"42000"
+         
+      }
+    ]
+  }

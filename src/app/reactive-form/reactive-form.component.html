@@ -1,0 +1,39 @@
+<div id="w1">  
+<form [formGroup]="reac" (ngSubmit)="reactive()">
+    <div> 
+        <input type="text" placeholder="Enter Name" name="user" formControlName="user">
+        <br/>
+        <span style="color: red;" *ngIf="user && user.invalid && user.touched">Enter into Field</span>
+    </div>
+    <br/>
+    <div> 
+ 
+        <input type="text" placeholder="EnterEmail" formControlName="email">
+        <br>
+        <span style="color: red;" *ngIf="email && email.invalid && email.touched">Enter valid Field</span>
+ 
+    </div>
+    <br/>
+    <div> 
+        <input type="text" name="city" placeholder="Enter city" formControlName="city">
+        <br/>
+        <span style="color: red;" *ngIf="city && city.invalid && city.touched">Enter valid Field</span>
+ 
+    </div>
+    <br/>
+    <div> 
+        <input type="text" name="mobile" placeholder="mobile" formControlName="mobile">
+        <br/>
+        <span style="color: red;" *ngIf="mobile && mobile.invalid && mobile.touched">Enter valid Field</span>
+        <br/>
+        <span></span>
+    </div>
+    <br/>
+    <div> 
+        <input type="text" name="pinCode" placeholder="Enter Pin" formControlName="pinCode">
+        <span style="color: red;" *ngIf="pinCode && pinCode.invalid && pinCode.touched">Enter valid Field</span>
+    </div>
+    <br/>
+    <button id="j2" [disabled]="reac.invalid">Verify</button>
+</form>
+</div>
